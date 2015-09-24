@@ -4,15 +4,21 @@
   "description": "Thin wrapper around visionmedia`s debug",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lib",
-    "lib": "babel src/ --out-dir lib/"
+    "lib": "npm run test && babel src/ --out-dir lib/ --ignore __test__",
+    "test": "DEBUG=dude* babel-tape-runner src/**/__test__/**/*.test.js",
+    "preversion": "npm start && git add lib",
+    "version": "exit 0",
+    "postversion": "git push && git push --tags"
   },
   "author": "igor ovsiannikov <garek@mail.ru>",
   "license": "MIT",
   "devDependencies": {
     "babel": "^5.8.23",
-    "debug": "^2.2.0"
+    "babel-tape-runner": "^1.2.0",
+    "debug": "^2.2.0",
+    "sinon": "^1.17.0",
+    "tape": "^4.2.0"
   },
   "peerDependencies": {
     "debug": "^2.2.0"
