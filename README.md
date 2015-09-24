@@ -7,5 +7,5 @@ It exposes a factory having same signature as visionmedia`s debug, but returns a
 ```
 import dude from 'debug-dude';
 
-const { debug, log, info, warn, error } = dude('io:ipc');
+const { debug, log, info, warn, error } = dude('my:space');
 ```
