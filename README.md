@@ -1,7 +1,7 @@
 # debug-dude
-Thin wrapper around visionmedia`s debug
+A thin wrapper around visionmedia`s debug
 
-It exposes a factory having same API as visionmedia`s debug, but returns an object with several logger instances.
+It exposes a factory having same signature as visionmedia`s debug, but returns an object with several logger instances.
 
 # How to use (es6)
 ```
