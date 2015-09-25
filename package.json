@@ -2,6 +2,13 @@
   "name": "debug-dude",
   "version": "1.0.1",
   "description": "Thin wrapper around visionmedia`s debug",
+  "keywords": [
+    "debug"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ggarek/debug-dude.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "start": "npm run lib",
