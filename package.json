@@ -16,7 +16,7 @@
     "test": "DEBUG=dude* babel-tape-runner src/**/__test__/**/*.test.js",
     "preversion": "npm start && git add lib",
     "version": "exit 0",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push origin HEAD && git push origin --tag"
   },
   "author": "igor ovsiannikov <garek@mail.ru>",
   "license": "MIT",

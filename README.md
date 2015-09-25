@@ -16,7 +16,7 @@ warn('beware of wolfs');
 error('you shall not pass, dude!');
 ```
 
-##Console output
+## Console output
 
 ```zsh
 # log all
